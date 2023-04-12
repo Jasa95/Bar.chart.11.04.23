@@ -9,12 +9,18 @@ const num = [11, 16, 6, 29, 21, 12, 30, 9, 9, 29, 7, 2, 12, 3, 20, 26, 13, 22, 9
 function startProgram() {
     console.log("java sccipt are  goarted");
 
-    const bars = document.querySelectorAll(".bar");
-
-    const firstBar = bars[0];
-
-    const h = num[0] / 32 * 100;
-
-    firstBar.style.height = `${h}px`;
-
+    displayBar();
 };
+
+function displayBar() {
+    const bars = document.querySelectorAll(".bar");
+    
+    
+    for(let i=0; i<40; i++) {
+        const newBar = bars[i];
+        const h = num[i] / 32 * 100;
+        
+        newBar.style.height = `${h}px`;
+        
+    }
+}
