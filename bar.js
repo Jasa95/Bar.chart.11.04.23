@@ -22,5 +22,5 @@ function displayBar() {
         
         newBar.style.height = `${h}px`;
         
-    }
-}
+    };
+};
